@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservation Hotel Room</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>🏨 Reservation Hotel Room</h1>
+
+        <!-- Personal Data Section -->
+        <div class="section">
+            <div class="section-title">Personal Data</div>
+            <div class="form-item">
+                <label>1. Name</label>
+                <input type="text" placeholder="Enter your name" />
+            </div>
+            <div class="form-item">
+                <label>2. Gender</label>
+                <select>
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+            </div>
+            <div class="form-item">
+                <label>3. Email Address</label>
+                <input type="email" placeholder="example@email.com" />
+            </div>
+            <div class="form-item">
+                <label>4. Telephone Number</label>
+                <input type="tel" placeholder="+62 8xxxxxxx" />
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Reservation Room Form -->
+        <div class="section">
+            <div class="section-title">Reservation Room Form</div>
+            <div class="form-item">
+                <label>1. Reservation Name</label>
+                <input type="text" placeholder="Reservation under name" />
+            </div>
+            <div class="form-item">
+                <label>2. Booking Date</label>
+                <input type="date" />
+            </div>
+            <div class="form-item">
+                <label>3. Room Type</label>
+                <select>
+                    <option>Deluxe</option>
+                    <option>Suite</option>
+                    <option>Executive</option>
+                </select>
+            </div>
+            <div class="form-item">
+                <label>4. Bed Type</label>
+                <select>
+                    <option>Single Bed</option>
+                    <option>Double Bed</option>
+                    <option>King Size</option>
+                </select>
+            </div>
+            <div class="form-item">
+                <label>5. Breakfast</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="breakfast" checked /> With Breakfast</label>
+                    <label><input type="radio" name="breakfast" /> Without Breakfast</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Payment -->
+        <div class="section">
+            <div class="section-title">Payment</div>
+            <div class="form-item">
+                <label>1. Check-in Date</label>
+                <input type="date" />
+            </div>
+            <div class="form-item">
+                <label>2. Check-out Date</label>
+                <input type="date" />
+            </div>
+            <div class="form-item">
+                <label>3. Payment Method</label>
+                <select>
+                    <option>Cash</option>
+                    <option>Credit Card</option>
+                    <option>Transfer</option>
+                    <option>QRIS</option>
+                </select>
+            </div>
+        </div>
+
+        <button class="submit-btn">Submit Reservation</button>
+    </div>
+</body>
+</html>
