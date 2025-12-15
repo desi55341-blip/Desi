@@ -1,0 +1,379 @@
+/* ===========================
+   STYLE GLOBAL
+=========================== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 40px 20px;
+    color: #1a1a1a;
+    text-align: center;
+}
+
+/* ===========================
+   JUDUL dan PARAGRAF
+=========================== */
+h2 {
+    font-size: 2.2rem;
+    color: #1E40AF;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+/* ===========================
+   LINK MENU - REGISTRASI & LOGIN
+=========================== */
+a {
+    display: inline-block;
+    margin: 0 12px;
+    padding: 12px 28px;
+    background-color: #2563EB; /* biru cerah */
+    color: #fff !important;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+a:hover,
+a:focus {
+    background-color: #1E3A8A;
+    box-shadow: 0 6px 20px rgba(30, 58, 138, 0.5);
+    outline: none;
+}
+
+/* ===========================
+   BUTTON (reusable)
+=========================== */
+.btn {
+    background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+    color: #fff !important;
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 8px 24px rgba(16,185,129,0.18);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btn:hover { transform: translateY(-3px); box-shadow: 0 14px 40px rgba(16,185,129,0.22); }
+
+/* ===========================
+   RESET UL & LI jika ada
+=========================== */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 25px 0 0 0;
+}
+
+li {
+    margin: 12px 0;
+    font-size: 1.1rem;
+}
+
+/* ===========================
+   HERO SECTION (BERANDA)
+=========================== */
+.hero {
+    max-width: 1000px;
+    margin: 30px auto 40px auto;
+    display: grid;
+    grid-template-columns: 1fr 420px;
+    gap: 24px;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.85));
+    padding: 28px;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(2,6,23,0.08);
+}
+
+.hero .hero-text h1 {
+    font-size: 2rem;
+    margin: 0 0 12px 0;
+    color: #0f172a;
+}
+
+.hero .hero-text p { margin: 0 0 18px 0; color: #334155; }
+
+.hero .hero-actions a { margin-right: 12px; }
+
+.hero .hero-image {
+    display: flex;
+    justify-content: center;
+}
+
+.hero .hero-image img { width: 100%; max-width: 380px; border-radius: 10px; box-shadow: 0 8px 30px rgba(5,150,105,0.12); }
+
+/* ===========================
+   DOCTOR GRID / CARDS
+=========================== */
+.doctor-grid {
+    display: grid;
+    /* force single-column stacked layout so each doctor appears below the previous */
+    grid-template-columns: 1fr;
+    gap: 14px;
+    max-width: 720px;
+    margin: 30px auto 80px auto;
+}
+
+.doctor-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 8px 24px rgba(2,6,23,0.06);
+    text-align: left;
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.doctor-card:hover { transform: translateY(-6px); box-shadow: 0 18px 40px rgba(2,6,23,0.08); }
+
+.doctor-card img { width: 72px; height: 72px; border-radius: 10px; object-fit: cover; flex-shrink: 0; box-shadow: 0 6px 18px rgba(5,150,105,0.08); }
+
+/* ===========================
+   PROFILE CARD
+=========================== */
+.profile-card {
+    max-width: 900px;
+    margin: 40px auto 60px auto;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 16px 50px rgba(2,6,23,0.07);
+    padding: 28px;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.profile-card img {
+    width: 72px;
+    height: 72px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 14px 40px rgba(5,150,105,0.14);
+}
+
+.profile-info h3 { margin: 0 0 8px 0; color: #0f172a; font-size: 1.6rem; }
+.profile-info p { margin: 6px 0; color: #475569; font-size: 1rem; }
+
+.profile-actions { margin-left: 0; display:flex; gap:12px; align-items:center; justify-content:center; width:100%; margin-top:16px; }
+.profile-actions .btn { background: linear-gradient(135deg, #10b981 0%, #34d399 100%); padding:12px 18px; border-radius:10px; font-size:0.95rem; box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3); }
+.profile-actions .btn:hover { background: linear-gradient(135deg, #059669 0%, #10b981 100%); box-shadow: 0 6px 20px rgba(16, 185, 129, 0.5); }
+
+/* Compact variant: smaller avatar and tighter card (matches screenshot) */
+.profile-card.compact {
+    max-width: 720px;
+    padding: 24px 18px;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+}
+
+.profile-card.compact img {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 6px 18px rgba(5,150,105,0.08);
+    background: transparent;
+    padding: 0;
+    flex-shrink: 0;
+}
+
+.profile-card.compact .profile-info { text-align: center; display:flex; flex-direction:column; gap:4px; align-items:center; }
+.profile-card.compact .name-row { display:flex; align-items:center; justify-content:center; gap:8px; margin-bottom:4px; }
+.profile-card.compact .label { color:#1f2937; font-weight:700; font-size:1.1rem; }
+.profile-card.compact h3 { margin:0; font-size:1.1rem; color:#1f2937; font-weight:600; }
+.profile-card.compact .muted-line { margin:0 0 6px 0; color:#1f2937; font-size:0.9rem; }
+.profile-card.compact .profile-info p { margin:2px 0; font-size:1.1rem; color:#1f2937; }
+
+@media (max-width:720px) {
+    .profile-card { flex-direction: column; text-align: center; }
+    .profile-actions { margin-left: 0; }
+}
+
+.doctor-info h4 { margin: 0 0 6px 0; color: #0f172a; }
+.doctor-info p { margin: 0; color: #475569; font-size: 0.95rem; }
+
+.doctor-actions { margin-left: auto; display:flex; gap:8px; }
+.doctor-actions a { padding:8px 10px; border-radius:8px; font-weight:600; text-decoration:none; }
+.doctor-actions .edit { background:#10b981; color:#fff; }
+.doctor-actions .del { background:#ef4444; color:#fff; }
+
+@media (max-width: 880px) {
+    .hero { grid-template-columns: 1fr; padding: 20px; }
+    .hero .hero-image { order: -1; }
+}
+
+/* ===========================
+   REGISTER - Split Card (pure CSS, no HTML changes)
+   Applies when a heading is followed by a form (common for register/login pages)
+=========================== */
+/* Layout: left panel from the H2, right panel is the form */
+/* When a page has an H2 immediately followed by a form, make the page use a
+   two-column split card where the left panel (H2) stretches to match the
+   height of the form. Uses :has() so only pages with that structure are
+   affected. Small-screen fallback still stacks vertically. */
+body:has(> h2 + form) {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 0;
+}
+
+h2 + form, h2 {
+    display: inline-block;
+    vertical-align: top;
+}
+
+h2 {
+    width: 46%;
+    max-width: 420px;
+    min-width: 260px;
+    margin: 40px 0 0 0;
+    padding: 36px 28px;
+    border-radius: 12px 0 0 12px;
+    background: linear-gradient(135deg,#06b6d4 0%, #059669 100%);
+    color: #fff;
+    text-align: left;
+    box-shadow: 0 12px 30px rgba(2,6,23,0.08);
+}
+
+/*h2::after {
+    content: "Untuk tetap terhubung dengan kami, silahkan masuk dengan akun anda";
+    display: block;
+    margin-top: 18px;
+    font-weight: 500;
+    opacity: 0.95;
+    font-size: 1rem;
+}*/
+
+h2::before {
+    content: "";
+    display: none;
+}
+
+h2::after {
+    content: "Akses Fitur Lengkap Sistem Melalui Menu Navigasi";
+    display: block;
+    margin-top: 18px;
+    font-weight: 500;
+    opacity: 0.95;
+    font-size: 1rem;
+}
+
+/* style the form (the right panel) */
+h2 + form {
+    width: 46%;
+    max-width: 520px;
+    min-width: 260px;
+    margin: 40px 0 0 0;
+    padding: 24px 28px;
+    border-radius: 0 12px 12px 0;
+    background: #fff;
+    box-shadow: 0 12px 30px rgba(2,6,23,0.06);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 + form label { font-weight:600; display:block; margin-bottom:6px; color:#0f172a; }
+h2 + form input[type="text"],
+h2 + form input[type="password"],
+h2 + form input[type="email"] {
+    width: 100%;
+    padding: 14px 12px;
+    margin-bottom: 8px; /* rapatkan sedikit */
+    border-radius: 8px;
+    border: 1px solid #e6eef6;
+    background: #f8fafc;
+    transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+h2 + form input:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(6,95,70,0.06);
+    background: #fff;
+    border-color: #059669;
+}
+
+h2 + form button[type="submit"] {
+    display: block; /* center horizontally */
+    margin: 14px auto 6px auto;
+    background: linear-gradient(90deg,#059669 0%, #10b981 100%);
+    color: #fff;
+    padding: 12px 28px;
+    border-radius: 28px;
+    border: none;
+    font-weight:700;
+    cursor:pointer;
+    box-shadow: 0 10px 30px rgba(16,185,129,0.18);
+}
+
+h2 + form a { display:inline-block; margin-top:12px; color:#64748b; }
+
+/* Responsive: stack vertically on small screens */
+@media (max-width: 780px) {
+    h2, h2 + form { display: block; width: auto; max-width: 680px; border-radius: 12px; margin: 18px auto; }
+    h2 { order: 1; }
+    h2 + form { order: 2; }
+    h2::before { font-size: 1.4rem; }
+}
+
+/* Enhanced boxed inputs for register (green-accented) */
+h2 + form input[type="text"],
+h2 + form input[type="password"],
+h2 + form input[type="email"] {
+    background: linear-gradient(180deg,#ffffff 0%, #fbfff9 100%);
+    border: 1px solid rgba(5,150,105,0.08); /* lighter border */
+    box-shadow: 0 6px 18px rgba(5,150,105,0.04) inset;
+    padding: 8px 10px;
+    margin-bottom: 8px;
+    font-size: 1rem;
+}
+
+h2 + form label { color: #0f172a; margin-bottom:6px; }
+
+h2 + form input::placeholder { color: #9aa6a0; }
+
+h2 + form input:focus {
+    border-color: #059669;
+    box-shadow: 0 8px 28px rgba(5,150,105,0.12);
+    transform: translateY(-2px);
+    outline: none;
+}
+
+h2 + form .note-box {
+    background: linear-gradient(90deg, rgba(6,182,212,0.06), rgba(5,150,105,0.04));
+    padding: 10px 12px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    color: #065f46;
+    font-size: 0.95rem;
+}
+
+/* small-link: for secondary links like 'Kembali ke Halaman Utama' */
+.link-small {
+    background: transparent !important;
+    color: #064e3b !important;
+    padding: 0.15rem 0.4rem !important;
+    margin: 0 6px !important;
+    border-radius: 6px;
+    box-shadow: none !important;
+    font-weight: 600;
+    text-decoration: underline !important;
+    display: inline-block;
+}

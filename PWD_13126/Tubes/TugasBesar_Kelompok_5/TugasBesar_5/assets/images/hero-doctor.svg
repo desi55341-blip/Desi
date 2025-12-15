@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#059669"/>
+      <stop offset="1" stop-color="#10b981"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="400" fill="url(#g)" rx="16"/>
+  <g fill="#fff" font-family="Segoe UI, Tahoma, Geneva, Verdana, sans-serif">
+    <text x="60" y="120" font-size="36" font-weight="700">Selamat Datang di</text>
+    <text x="60" y="170" font-size="44" font-weight="800">
+      <tspan x="60" dy="0">Sistem Rumah Sakit</tspan>
+      <tspan x="60" dy="52">Modern</tspan>
+    </text>
+    <text x="60" y="260" font-size="18" opacity="0.95">Cari dokter, jadwalkan kunjungan, dan kelola profil Anda dengan mudah.</text>
+  </g>
+  <g transform="translate(520,70)">
+    <circle cx="120" cy="100" r="80" fill="#fff" opacity="0.08"/>
+    <g transform="translate(40,40)" fill="#fff">
+      <path d="M120 0c-30 0-54 24-54 54s24 54 54 54 54-24 54-54S150 0 120 0zm-78 154c-6 0-12 5-12 12v10h180v-10c0-7-6-12-12-12H42z" opacity="0.95"/>
+    </g>
+  </g>
+</svg>
